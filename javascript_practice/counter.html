@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="counterBtn">Клікни тут</button>
+<p>Кількість кліків: <span id="countDisplay">0</span></p>
+<script>
+    let clickCount = 0; // Змінна для зберігання лічильника
+const counterBtn = document.getElementById('counterBtn');
+const countDisplay = document.getElementById('countDisplay');
+
+counterBtn.addEventListener('click', () => {
+  clickCount++; // Збільшуємо лічильник
+  countDisplay.textContent = clickCount; // Оновлюємо відображення
+});
+</script>
+</body>
+</html>

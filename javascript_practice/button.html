@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Завдання 7</title>
+</head>
+<body>
+
+    <button id="myButton">Натисни мене</button>
+
+    <p id="message"></p>
+
+    <script>
+        // 1. Отримуємо посилання на кнопку за її ID
+        const button = document.getElementById('myButton');
+        const output = document.getElementById('message');
+
+        // 2. Додаємо слухача подій (event listener)
+        button.addEventListener('click', () => {
+            // 3. Змінюємо текст кнопки
+            button.textContent = 'Текст змінено!';
+
+            // 4. Опційно: виводимо повідомлення про зміну
+            output.textContent = 'Успішно змінено DOM.';
+        });
+    </script>
+
+</body>
+</html>

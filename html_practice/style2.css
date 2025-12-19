@@ -1,0 +1,51 @@
+/* Селектор за тегом */
+body {
+    background-color: #f2f2f2;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль для заголовка */
+h1 {
+    text-align: center;
+    color: #0044cc;
+    background-color: #cce0ff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #0044cc;
+}
+
+/* Селектор за класом */
+.intro {
+    font-size: 18px;
+    background-color: #ffffff;
+    border: 2px solid #99ccff;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Ще один клас */
+.content {
+    background-color: #e6f2ff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid #b3d1ff;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* Стиль для футера */
+footer {
+    background-color: #0044cc;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}

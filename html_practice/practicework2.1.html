@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Макет</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0044cc;
+      color: white;
+      padding: 15px 30px;
+    }
+
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    header nav a:hover {
+      color: #ffcc00;
+    }
+
+    header .extra a {
+      color: white;
+      text-decoration: none;
+      background-color: #003399;
+      padding: 8px 15px;
+      border-radius: 5px;
+    }
+
+    header .extra a:hover {
+      background-color: #ffcc00;
+      color: #003399;
+    }
+
+    main {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar-left, .sidebar-right, .content {
+      background-color: white;
+      padding: 15px;
+      border-radius: 8px;
+      min-height: 300px;
+    }
+
+    .sidebar-left {
+      flex: 1;
+    }
+
+    .content {
+      flex: 2;
+    }
+
+    .sidebar-right {
+      flex: 1;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    footer ul li:first-child {
+      font-weight: bold;
+    }
+
+    footer ul li a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    footer ul li a:hover {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MyBrand</div>
+    <nav>
+      <a href="#">Головна</a>
+      <a href="#">Про нас</a>
+      <a href="#">Послуги</a>
+      <a href="#">Контакти</a>
+    </nav>
+    <div class="extra">
+      <a href="#">Увійти</a>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar-left">
+      <h3>Ліва панель</h3>
+      <p>Тут може бути меню, реклама чи список розділів сайту.</p>
+    </aside>
+
+    <section class="content">
+      <h2>Основний контент</h2>
+      <p>Це центральна частина сторінки. Тут розміщується головна інформація або стаття.</p>
+      <p>Flexbox дозволяє легко робити адаптивні макети без використання таблиць.</p>
+    </section>
+
+    <aside class="sidebar-right">
+      <h3>Права панель</h3>
+      <p>Тут можуть бути новини, контакти або посилання на соцмережі.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#">Проєкт</a></li>
+      <li><a href="#">Підтримка</a></li>
+      <li><a href="#">Політика конфіденційності</a></li>
+      <li><a href="#">Авторські права</a></li>
+    </ul>
+    <p>&copy; 2025 MyBrand. Усі права захищено.</p>
+  </footer>
+
+</body>
+</html>

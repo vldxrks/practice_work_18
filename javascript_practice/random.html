@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="randomBtn">Вивести випадковий об'єкт</button>
+<p id="output"></p>
+<script>
+    const dataArray = [
+  { id: 1, name: "Книга" },
+  { id: 2, name: "Телефон" },
+  { id: 3, name: "Ноутбук" },
+  { id: 4, name: "Ручка" }
+];
+
+const randomBtn = document.getElementById('randomBtn');
+const outputElement = document.getElementById('output');
+
+randomBtn.addEventListener('click', () => {
+  // 1. Генеруємо випадковий індекс:
+  const randomIndex = Math.floor(Math.random() * dataArray.length);
+
+  // 2. Отримуємо випадковий об'єкт:
+  const randomObject = dataArray[randomIndex];
+
+  // 3. Виводимо інформацію:
+  outputElement.textContent = `Випадковий об'єкт: ${randomObject.name} (ID: ${randomObject.id})`;
+});
+</script>
+</body>
+</html>
